@@ -1,0 +1,18 @@
+#include <stdio.h>
+int fun(int a[],int k,int i,int s)
+{
+    
+    if(i>k)
+     return s;
+    s=s+a[i];
+    fun(a,2,i+1,s);
+    
+}
+
+int main()
+{
+    int a[]={2,5,4};
+    printf("%d",fun(a,2,0,0));
+
+    return 0;
+}
